@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		B832190F2916988500AFA4A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832190E2916988500AFA4A2 /* AppDelegate.swift */; };
 		B83219112916988500AFA4A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83219102916988500AFA4A2 /* SceneDelegate.swift */; };
-		B83219132916988500AFA4A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83219122916988500AFA4A2 /* ViewController.swift */; };
+		B83219132916988500AFA4A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83219122916988500AFA4A2 /* MainViewController.swift */; };
 		B83219162916988500AFA4A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83219142916988500AFA4A2 /* Main.storyboard */; };
 		B83219182916988600AFA4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83219172916988600AFA4A2 /* Assets.xcassets */; };
 		B832191B2916988600AFA4A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83219192916988600AFA4A2 /* LaunchScreen.storyboard */; };
+		B83219272916AB8A00AFA4A2 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83219262916AB8A00AFA4A2 /* Cocktail.swift */; };
+		B832192A2916C2AD00AFA4A2 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83219292916C2AD00AFA4A2 /* UserActionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B832190B2916988500AFA4A2 /* ApiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832190E2916988500AFA4A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83219102916988500AFA4A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B83219122916988500AFA4A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B83219122916988500AFA4A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B83219152916988500AFA4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B83219172916988600AFA4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B832191A2916988600AFA4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B832191C2916988600AFA4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83219262916AB8A00AFA4A2 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		B83219292916C2AD00AFA4A2 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		B832190D2916988500AFA4A2 /* ApiApp */ = {
 			isa = PBXGroup;
 			children = (
-				B83219222916989500AFA4A2 /* App */,
 				B83219232916989D00AFA4A2 /* ViewControllers */,
+				B83219282916C28900AFA4A2 /* Views */,
 				B8321924291698A800AFA4A2 /* Storyboards */,
+				B832192529169ED100AFA4A2 /* Models */,
+				B83219222916989500AFA4A2 /* App */,
 				B83219172916988600AFA4A2 /* Assets.xcassets */,
 				B832191C2916988600AFA4A2 /* Info.plist */,
 			);
@@ -77,7 +83,7 @@
 		B83219232916989D00AFA4A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B83219122916988500AFA4A2 /* ViewController.swift */,
+				B83219122916988500AFA4A2 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -89,6 +95,22 @@
 				B83219192916988600AFA4A2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B832192529169ED100AFA4A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B83219262916AB8A00AFA4A2 /* Cocktail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B83219282916C28900AFA4A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B83219292916C2AD00AFA4A2 /* UserActionCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83219132916988500AFA4A2 /* ViewController.swift in Sources */,
+				B832192A2916C2AD00AFA4A2 /* UserActionCell.swift in Sources */,
+				B83219132916988500AFA4A2 /* MainViewController.swift in Sources */,
 				B832190F2916988500AFA4A2 /* AppDelegate.swift in Sources */,
 				B83219112916988500AFA4A2 /* SceneDelegate.swift in Sources */,
+				B83219272916AB8A00AFA4A2 /* Cocktail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,9 +351,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nu-shtosh.ApiApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,6 +375,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,9 +383,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nu-shtosh.ApiApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
